@@ -1,61 +1,56 @@
-// 1
+//1
+
 // const x = 10;
 // const y = 7;
-// x > y ? alert( "x больше, чем y" ) : alert( "x не больше, чем y" );
 
-// 2
-// const num = prompt("Введите число");
-// if ( num % 2 === 0){
-// 	alert ( "Число " + num + " четное" );
-// }else{
-// 	alert ( "Число " + num + " нечетное" );
-// }
+// alert( x > y ? 'x больше, чем y' : 'x не больше, чем y' );
 
-// 3
 
-// const number = +prompt("Введите целое число");
+//2
 
-// if (Number.isInteger(number)) {
-//     const sign = Math.sign(number);
-//     number = String(number);
-//     const length = number.length;
-//     if ((sign === 0) || (sign === -0)) {
-//         alert("Ноль вводить нельзя");
-//     } else if ((sign === 1) && (length === 1)) {
-//         alert("Число " + number + " однозначное положительное.");
-//     } else if ((sign === 1) && (length === 2)) {
-//         alert("Число " + number + " двузначное положительное.");
-//     } else if ((sign === 1) && (length === 3)) {
-//         alert("Число " + number + " трехзначное положительное."); 
-//     } else if ((sign === 1) && (length > 3)) {
-//         alert("Число " + number + " многозначное положительное."); 
-//     } else if ((sign === -1) && ((length - 1) === 1)) {
-//         alert("Число " + number + " однозначное отрицательное.");
-//     } else if ((sign === -1) && ((length - 1) === 2)) {
-//         alert("Число " + number + " двузначное отрицательное.");
-//     } else if ((sign === -1) && ((length - 1) === 3)) {
-//         alert("Число " + number + " трехзначное отрицательное.");
-//     } else if ((sign === -1) && ((length - 1) > 3)) {
-//         alert("Число " + number + " многозначное отрицательное.");
-//     }
+// const num = +prompt('Введите число');
+
+// if (num % 2 === 0) {
+//    alert('Число ' + num + ' четное');
 // } else {
-//     alert("Вы ввели не то, что нужно");
+//    alert('Число ' + num + ' нечетное');
 // }
 
-// 4
-// const firstNum = +prompt ( 'Введите первое число ' );
-// const secondNum = +prompt ( 'Введите второе число ' );
-// const thirdNum = +prompt ( 'Введите третье число' );
-// if ( firstNum > secondNum && firstNum > thirdNum){
-// 	alert ( `Максимальное значение ${firstNum}` );
-// }else{
-// 	if ( secondNum > thirdNum ){
-// 		alert ( `Максимальное значение ${secondNum}` );
-// 	}else{
-// 		alert ( `Максимальное значение ${thirdNum}` );
-// 	}
+
+//3
+
+// const num = prompt('Введите целое число');
+
+// if (num > 0) {
+//    alert(`Число ${num} положительное ${num.toString().length}-значное`);
+// } else {
+//    alert(`Число ${num} отрицательное ${num.toString().length - 1}-значное`);
 // }
 
-// 5
 
-// посмотреть видео
+//4
+
+// const num1 = +prompt('Введите первое число');
+// const num2 = +prompt('Введите второе число');
+// const num3 = +prompt('Введите третье число');
+
+// if (num1 >= num2 && num1 >= num3) {
+//    alert(`Число ${num1} наибольшее`);
+// } else if (num2 >= num1 && num2 >= num3) {
+//    alert(`Число ${num2} наибольшее`);
+// } else {
+//    alert(`Число ${num3} наибольшее`);
+// }
+
+
+//5
+
+// const a = +prompt('Введите длину первой стороны треугольника');
+// const b = +prompt('Введите длину второй стороны треугольника');
+// const c = +prompt('Введите длину третьей стороны треугольника');
+
+// if (a + b > c && a + c > b && b + c > a) {
+//    alert('Нормальный треугольник');
+// } else {
+//    alert('Треугольник не получится');
+// }
